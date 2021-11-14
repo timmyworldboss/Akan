@@ -25,5 +25,21 @@ p{
 }
 .form{
     text-align: center;
-
+}
     
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}   
+
+input[type=submit]:hover {
+    background-color: black;
+}   
