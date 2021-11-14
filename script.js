@@ -44,14 +44,14 @@ function calculateDayValue(){
 }
 
 function getGender(){
-  var genders = document.getElementsByName("gender");
+   var genders = document.getElementsByName("gender");
   if(genders[0].checked == true){
     var gender = "male";
   }
-  else if(genders[1].checked == true){
+   else if(genders[1].checked == true){
     var gender = "female";
   }
-  else{
+   else{
     return false;
   }
   switch(gender){
@@ -59,13 +59,13 @@ function getGender(){
       if (dayValue == 1){
         alert("You were born on " +dayNames[0] + " and Your akan name is " +maleNames[0]+"!");
       }
-      else if(dayValue == 2){
+       else if(dayValue == 2){
         alert("You were born on "+dayNames[1] + " and Your akan name is " +maleNames[1]+"!");
       }
-      else if(dayValue == 3){
+       else if(dayValue == 3){
         alert("You were born on " +dayNames[2]+ " and Your akan name is " +maleNames[2]+"!");
       }
-      else if(dayValue == 4){
+       else if(dayValue == 4){
         alert("You were born on "+dayNames[3] +  " and Your akan name is " +maleNames[3]+"!");
       }
       else if(dayValue == 5){
