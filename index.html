@@ -19,36 +19,29 @@
           <h2>About App</h2>
           <p> THis is a well developed web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </p>
      </div>
-     <h2>please Enter Your Details Here!</h2>
-     <form name="myForm" class="form" onsubmit="validate();">
-       <div class="form-group">
-         <label for="number">Year of Birth:</label>
-         <input type="number" class="form-control" id="year" placeholder="Year of Birth Eg: 2019 if born in 2019" name="year">
-       </div>
-       <div class="form-group">
-         <label for="month">Month of Birth:</label>
-         <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">
-       </div>
-       <div class="form-group">
-         <label for="date">Date of Birth:</label>
-         <input type="number" class="form-control" id="date" placeholder="Date of Birth eg 05 for May" name="date">
-       </div>
-       <div class="form-group">
-         <label for="month">Gender</label><br>
-         <div class="form-check-inline">
-           <label class="form-check-label">
-             <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
-           </label>
-         </div>
-         <div class="form-check-inline">
-           <label class="form-check-label">
-             <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
-           </label>
-         </div>
-       </div>
-       <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>
-       <br>
-     </form>
-          
+     
+     <form class="forms">
+        <div class="form-group">
+          <label for="year" class="labels">Year:</label>
+          <input type="number" class="yr" name="year" placeholder="e.g 2000" id="year" required>
+        </div>
+        <div class="form-group">
+          <label for="month" class="labels">Month:</label>
+          <input type="number" class="mth" name="month" placeholder="e.g 12" id="month" required>
+        </div>
+        <div class="form-group">
+          <label for="day" class="labels">Day of month:</label>
+          <input type="number" class="day" name="day" placeholder="e.g 30" id="dayOfMonth" required>
+        </div>
+        <div class="radio-button" id="gender">
+          <input type="radio" class="genders labels" id="rad1" name="gender" checked required>Male
+          <input type="radio" class="genders labels" id="rad2" name="gender" required>Female
+        </div>
+        <br>
+        <button type="button" value="Submit" name="Button" onclick="akanFunction()">Submit</button>
+      </form>
+      <h1 id="result"><strong>Name</strong></h1>
+
+
 </body>
 </html>git
